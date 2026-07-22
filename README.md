@@ -35,7 +35,7 @@ Remember:
 - 🚫 Non-overlapping balloons usually require separate arrows.
 - 🎈 Every balloon must be popped.
 
-### 📚 Examples
+#### 📚 Examples
 **🎈 Example 1 — One Arrow, Two Balloons!**
 ```
 points = [[10,16],[2,8],[1,6],[7,12]]

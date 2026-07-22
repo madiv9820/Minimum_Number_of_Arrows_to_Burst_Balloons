@@ -1,0 +1,258 @@
+[
+    {
+        "title": "🎯 Example 1 - Multiple Overlapping Balloons",
+        "input": {
+            "points": [[10,16],[2,8],[1,6],[7,12]]
+        },
+        "output": 2,
+        "description": "🏹 Two well-placed arrows burst all overlapping balloons efficiently. 🎈"
+    },
+    {
+        "title": "🎈 Example 2 - No Overlap at All",
+        "input": {
+            "points": [[1,2],[3,4],[5,6],[7,8]]
+        },
+        "output": 4,
+        "description": "🚫 Every balloon stands alone, so each one needs its own arrow. 🏹"
+    },
+    {
+        "title": "🤝 Example 3 - Balloons Touch at Endpoints",
+        "input": {
+            "points": [[1,2],[2,3],[3,4],[4,5]]
+        },
+        "output": 2,
+        "description": "✨ Touching intervals can share the same arrow because endpoints are inclusive. 🎯"
+    },
+    {
+        "title": "🎈 Single Balloon",
+        "input": {
+            "points": [[5,10]]
+        },
+        "output": 1,
+        "description": "🏹 One balloon only needs one perfectly aimed arrow. 💥"
+    },
+    {
+        "title": "🌈 All Balloons Completely Overlap",
+        "input": {
+            "points": [[1,10],[2,9],[3,8],[4,7]]
+        },
+        "output": 1,
+        "description": "🎯 Every balloon shares a common range, so one arrow bursts them all. 💥"
+    },
+    {
+        "title": "🔗 Chain of Overlapping Balloons",
+        "input": {
+            "points": [[1,4],[2,5],[5,8],[6,9]]
+        },
+        "output": 2,
+        "description": "🏹 Connected groups of balloons can each be cleared with a single arrow. 🎈"
+    },
+    {
+        "title": "📏 Negative Coordinates",
+        "input": {
+            "points": [[-10,-5],[-8,-3],[-2,2]]
+        },
+        "output": 2,
+        "description": "🌍 Balloon positions may be negative, but the bursting rules remain the same. 🏹"
+    },
+    {
+        "title": "⚡ Mixed Negative and Positive Ranges",
+        "input": {
+            "points": [[-5,0],[-2,3],[1,6],[7,9]]
+        },
+        "output": 3,
+        "description": "🎯 Overlapping intervals reduce arrows even across negative and positive coordinates. ✨"
+    },
+    {
+        "title": "🎪 Identical Balloons",
+        "input": {
+            "points": [[3,7],[3,7],[3,7],[3,7]]
+        },
+        "output": 1,
+        "description": "💥 Identical balloons can all be burst with a single arrow. 🏹"
+    },
+    {
+        "title": "🧩 Nested and Independent Groups",
+        "input": {
+            "points": [[1,10],[2,3],[4,5],[6,7],[11,12]]
+        },
+        "output": 4,
+        "description": "🎈 A large balloon covers several smaller ones, while one isolated balloon needs another arrow. 🏹"
+    },
+    {
+        "title": "🚀 Extreme Coordinate Values",
+        "input": {
+            "points": [[-2147483648,2147483647],[0,1]]
+        },
+        "output": 1,
+        "description": "🌌 Even the largest possible coordinate range can be handled correctly. 🎯"
+    },
+    {
+        "title": "🎲 Random Overlapping Pattern",
+        "input": {
+            "points": [[9,12],[1,5],[4,10],[11,13],[6,8]]
+        },
+        "output": 3,
+        "description": "🎯 Strategic arrow placement bursts multiple balloons despite complex overlaps. 💥"
+    },
+        {
+        "title": "🎯 Two Separate Overlapping Groups",
+        "input": {
+            "points": [[1,5],[2,6],[8,10],[9,11]]
+        },
+        "output": 2,
+        "description": "🏹 Each overlapping group can be cleared with a single arrow. 🎈"
+    },
+    {
+        "title": "🌉 Bridge Interval Connects Everything",
+        "input": {
+            "points": [[1,3],[2,5],[4,7],[6,9],[3,6]]
+        },
+        "output": 2,
+        "description": "🌉 A connecting balloon links several intervals, reducing the arrows needed. 🎯"
+    },
+    {
+        "title": "📦 Completely Disjoint Balloons",
+        "input": {
+            "points": [[1,2],[4,5],[7,8],[10,11],[13,14]]
+        },
+        "output": 5,
+        "description": "🚫 No balloons overlap, so every balloon requires its own arrow. 🏹"
+    },
+    {
+        "title": "🎈 All Balloons Share One Point",
+        "input": {
+            "points": [[1,5],[2,5],[3,5],[4,5],[5,8]]
+        },
+        "output": 1,
+        "description": "✨ Every balloon overlaps at a common point, allowing one perfect shot. 💥"
+    },
+    {
+        "title": "🔄 Alternating Overlaps",
+        "input": {
+            "points": [[1,4],[3,6],[5,8],[7,10],[9,12]]
+        },
+        "output": 3,
+        "description": "🔄 Partial overlaps create multiple bursting groups. 🎯"
+    },
+    {
+        "title": "📍 Single Common Endpoint",
+        "input": {
+            "points": [[1,3],[3,5],[3,7],[3,9]]
+        },
+        "output": 1,
+        "description": "📌 Every balloon touches the same endpoint, making one arrow sufficient. 🏹"
+    },
+    {
+        "title": "🎪 Large Nested Collection",
+        "input": {
+            "points": [[1,100],[10,90],[20,80],[30,70],[40,60]]
+        },
+        "output": 1,
+        "description": "🎯 Every balloon lies inside another, so one arrow bursts them all. 💥"
+    },
+    {
+        "title": "🪜 Staircase Overlaps",
+        "input": {
+            "points": [[1,3],[2,4],[3,5],[4,6],[5,7]]
+        },
+        "output": 2,
+        "description": "🪜 Consecutive overlaps allow balloons to be burst in just two shots. 🎈"
+    },
+    {
+        "title": "❄️ Negative Intervals Only",
+        "input": {
+            "points": [[-10,-8],[-9,-6],[-5,-3],[-4,-1]]
+        },
+        "output": 2,
+        "description": "🌨️ Negative coordinates behave exactly like positive ones. 🏹"
+    },
+    {
+        "title": "⚖️ Balanced Around Zero",
+        "input": {
+            "points": [[-5,0],[-3,2],[-1,4],[5,8]]
+        },
+        "output": 2,
+        "description": "⚖️ Balloons spanning zero can still share arrows with overlapping neighbors. 🎯"
+    },
+    {
+        "title": "🌌 Huge Independent Ranges",
+        "input": {
+            "points": [[-2147483648,-100],[0,100],[1000,2147483647]]
+        },
+        "output": 3,
+        "description": "🚀 Extremely large coordinates don't change the bursting logic. 🎈"
+    },
+    {
+        "title": "🎯 Tiny Nested Pair",
+        "input": {
+            "points": [[2,10],[4,5]]
+        },
+        "output": 1,
+        "description": "💥 A smaller balloon inside a larger one can be burst together. 🏹"
+    },
+    {
+        "title": "🧱 Three Independent Clusters",
+        "input": {
+            "points": [[1,4],[2,3],[6,8],[7,9],[11,13],[12,14]]
+        },
+        "output": 3,
+        "description": "🎈 Each cluster needs exactly one well-placed arrow. 🎯"
+    },
+    {
+        "title": "🌊 Wide Interval Covers Everything",
+        "input": {
+            "points": [[1,100],[5,10],[20,25],[40,50],[60,70]]
+        },
+        "output": 4,
+        "description": "🌊 One massive balloon overlaps every smaller balloon. 💥"
+    },
+    {
+        "title": "🧩 Mixed Small and Large Intervals",
+        "input": {
+            "points": [[1,2],[2,6],[4,5],[7,8],[8,10],[9,11]]
+        },
+        "output": 4,
+        "description": "🧩 Different interval sizes combine into two efficient bursting groups. 🏹"
+    },
+    {
+        "title": "🚧 Gaps Between Clusters",
+        "input": {
+            "points": [[1,3],[2,4],[10,12],[11,13],[20,22]]
+        },
+        "output": 3,
+        "description": "🚧 Large gaps prevent arrows from covering multiple clusters. 🎈"
+    },
+    {
+        "title": "🎇 Many Identical Endpoints",
+        "input": {
+            "points": [[1,5],[2,5],[3,5],[4,5],[5,5]]
+        },
+        "output": 1,
+        "description": "🎆 A shared ending point lets one arrow burst every balloon. 💥"
+    },
+    {
+        "title": "🎢 Zigzag Overlaps",
+        "input": {
+            "points": [[1,6],[5,8],[2,4],[7,10],[9,12]]
+        },
+        "output": 3,
+        "description": "🎢 Irregular overlaps still allow efficient grouping of balloons. 🏹"
+    },
+    {
+        "title": "🪙 Touching Pairs",
+        "input": {
+            "points": [[1,2],[2,3],[5,6],[6,7]]
+        },
+        "output": 2,
+        "description": "🤝 Touching intervals can share an arrow thanks to inclusive endpoints. 🎯"
+    },
+    {
+        "title": "🏁 Maximum Separation",
+        "input": {
+            "points": [[-100,-90],[0,10],[100,110],[200,210],[300,310]]
+        },
+        "output": 5,
+        "description": "🏁 Every balloon is isolated, requiring one arrow each. 🏹"
+    }
+]
